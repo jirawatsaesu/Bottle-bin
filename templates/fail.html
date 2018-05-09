@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fail Page</title>
+  </head>
+
+  <body>
+    <h1>Sorry</h1>
+      {% if no_name %}
+        <h3>You enter wrong username</h3>
+      {% elif wrong_code %}
+        <h3>You enter wrong code</h3>
+      {% else %}
+        <h3>Your code has been used</h3>
+      {% endif %}
+    <p><a href="http://172.20.10.10:5000/">Home</a><br>
+    <a href="http://172.20.10.10:5000/register/">Sign up</a></p>
+  </body>
+</html>
